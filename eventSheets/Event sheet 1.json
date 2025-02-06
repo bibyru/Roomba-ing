@@ -170,6 +170,30 @@
 							}
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "panel",
+							"sid": 103817731402693,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit1",
+							"sid": 978751849986709,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit2",
+							"sid": 660657773570371,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 554989955291626,
@@ -653,6 +677,46 @@
 						}
 					],
 					"sid": 919088043445885
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 868746778586286,
+							"parameters": {
+								"key": 67
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "panel",
+							"sid": 658859858189577,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit1",
+							"sid": 303947973558527,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit2",
+							"sid": 428258235892568,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 168754034278905
 				}
 			],
 			"sid": 165129915097616

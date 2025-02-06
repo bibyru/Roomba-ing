@@ -158,7 +158,10 @@
 					"buttonAddPlayer",
 					"textPlayerAdd",
 					"textPlayerRemove",
-					"textCredit"
+					"textCredit",
+					"panel",
+					"textInCredit1",
+					"textInCredit2"
 				],
 				"subfolders": [],
 				"name": "UI"
