@@ -1,17 +1,11 @@
 {
-	"name": "objCounterLong",
+	"name": "objChair",
 	"plugin-id": "Sprite",
-	"sid": 923602528492334,
+	"sid": 322800861530948,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 495207321577173
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -26,13 +20,37 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7459256,
+						"imageSpriteId": 4360797,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.75,
+								0.25,
+								0.8125,
+								0.3125,
+								0.875,
+								0.4375,
+								0.875,
+								0.5625,
+								0.75,
+								1,
+								0.25,
+								1,
+								0.125,
+								0.5625,
+								0.125,
+								0.4375,
+								0.1875,
+								0.3125
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 571652315964538,
+				"sid": 786623307972832,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

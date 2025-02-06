@@ -724,6 +724,173 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "See-Through Objects",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "objPlayer",
+							"sid": 651371201852114,
+							"parameters": {
+								"object": "objTableCoffee"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "objTableCoffee",
+							"sid": 220787991525881,
+							"parameters": {
+								"opacity": "50"
+							}
+						}
+					],
+					"sid": 842239542879851
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 520625393919813
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "objTableCoffee",
+							"sid": 582592269617113,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 747508817261740
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "objPlayer",
+							"sid": 466442504333547,
+							"parameters": {
+								"object": "objTable"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "objTable",
+							"sid": 935595641229578,
+							"parameters": {
+								"opacity": "50"
+							}
+						}
+					],
+					"sid": 562234268247995,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-nth-instance",
+									"objectClass": "System",
+									"sid": 241296106345551,
+									"parameters": {
+										"object": "objSolidLong",
+										"instance": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "objSolidLong",
+									"sid": 860773327741829,
+									"parameters": {
+										"opacity": "50"
+									}
+								}
+							],
+							"sid": 546989297556376
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 514480272211740
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "objTable",
+							"sid": 519629381795825,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "objSolidLong",
+							"sid": 706600781882510,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 837888222928626
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "objPlayer",
+							"sid": 592832769547511,
+							"parameters": {
+								"object": "objSolidLong"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "objTable",
+							"sid": 841786276757722,
+							"parameters": {
+								"opacity": "50"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "objSolidLong",
+							"sid": 866961144563848,
+							"parameters": {
+								"opacity": "50"
+							}
+						}
+					],
+					"sid": 751288955411385
+				}
+			],
+			"sid": 513624583689467
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "Score, Spills, Perks",
 			"description": "",
 			"isActiveOnStart": true,

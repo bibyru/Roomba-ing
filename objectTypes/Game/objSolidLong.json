@@ -1,56 +1,38 @@
 {
-	"name": "objTableCoffee",
+	"name": "objSolidLong",
 	"plugin-id": "Sprite",
-	"sid": 900609199469676,
+	"sid": 923602528492334,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 495207321577173
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 32,
+						"width": 16,
 						"height": 16,
-						"originX": 0.5,
+						"originX": 0,
 						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3278332,
-						"collisionPoly": {
-							"points": [
-								0.0625,
-								0,
-								0.9375,
-								0,
-								0.96875,
-								0.125,
-								1,
-								0.4375,
-								1,
-								0.8125,
-								0.875,
-								1,
-								0.125,
-								1,
-								0,
-								0.8125,
-								0,
-								0.4375,
-								0.03125,
-								0.125
-							]
-						},
+						"imageSpriteId": 7459256,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 894979137514059,
+				"sid": 571652315964538,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

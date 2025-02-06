@@ -111,7 +111,9 @@
 			"Keyboard",
 			"TESTtext",
 			"Browser",
-			"Audio"
+			"Audio",
+			"Sprite",
+			"textPlayerID"
 		],
 		"subfolders": [
 			{
@@ -126,8 +128,10 @@
 					"perkEffect",
 					"perkBoost",
 					"objCounter",
-					"objCounterLong",
-					"objFridge"
+					"objSolidLong",
+					"objFridge",
+					"objTable",
+					"objChair"
 				],
 				"subfolders": [],
 				"name": "Game"
