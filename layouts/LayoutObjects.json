@@ -186,7 +186,7 @@
 							"properties": {
 								"max-speed": 100,
 								"acceleration": 800,
-								"deceleration": 1200,
+								"deceleration": 800,
 								"directions": "dir-8",
 								"set-angle": "smooth",
 								"allow-sliding": false,
