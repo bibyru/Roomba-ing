@@ -468,7 +468,7 @@
 						"text-direction": "ltr",
 						"icon-set": -1,
 						"initially-visible": true,
-						"origin": "top-left",
+						"origin": "bottom",
 						"read-aloud": false
 					},
 					"uid": 65,
@@ -486,12 +486,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 112,
-						"y": 26,
+						"x": 128,
+						"y": 48,
 						"width": 32,
 						"height": 16,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 1,
 						"color": [
 							1,
 							1,

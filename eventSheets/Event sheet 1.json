@@ -76,6 +76,10 @@
 							],
 							"actions": [
 								{
+									"type": "comment",
+									"text": "Spawn"
+								},
+								{
 									"id": "spawn-another-object",
 									"objectClass": "spawnPlayer",
 									"sid": 658027713117583,
@@ -100,13 +104,42 @@
 									}
 								},
 								{
+									"id": "spawn-another-object",
+									"objectClass": "spawnPlayer",
+									"sid": 677431891273900,
+									"parameters": {
+										"object": "textPlayerID",
+										"layer": "2",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Set text position"
+								},
+								{
 									"id": "set-position",
 									"objectClass": "textScore",
-									"sid": 790834270973288,
+									"sid": 954670584261080,
 									"parameters": {
 										"x": "spawnPlayer.X",
-										"y": "spawnPlayer.Y -10"
+										"y": "spawnPlayer.Y -16"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "textPlayerID",
+									"sid": 761058456517490,
+									"parameters": {
+										"x": "spawnPlayer.X",
+										"y": "spawnPlayer.Y - 7"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Set text as children"
 								},
 								{
 									"id": "add-child",
@@ -126,12 +159,45 @@
 									}
 								},
 								{
+									"id": "add-child",
+									"objectClass": "objPlayer",
+									"sid": 635571087840169,
+									"parameters": {
+										"child": "textPlayerID",
+										"transform-x": true,
+										"transform-y": true,
+										"transform-w": true,
+										"transform-h": true,
+										"transform-a": false,
+										"transform-o": false,
+										"transform-z-elevation": true,
+										"transform-visibility": false,
+										"destroy-with-parent": true
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Set text text"
+								},
+								{
 									"id": "set-text",
 									"objectClass": "textScore",
-									"sid": 417122649317172,
+									"sid": 742409911282384,
 									"parameters": {
-										"text": "\"P\"&objPlayer.IID+1&\": \"&objPlayer.score"
+										"text": "objPlayer.score"
 									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "textPlayerID",
+									"sid": 839614225810231,
+									"parameters": {
+										"text": "\"P\"&objPlayer.IID+1"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "Move spawner position"
 								},
 								{
 									"id": "set-position",
@@ -161,38 +227,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "textPlayerRemove",
-							"sid": 405719760870279,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "panel",
-							"sid": 103817731402693,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "textInCredit1",
-							"sid": 978751849986709,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "textInCredit2",
-							"sid": 660657773570371,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -266,41 +300,7 @@
 									]
 								}
 							],
-							"sid": 181364358549370,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 495795464711215,
-											"parameters": {
-												"variable": "playerCount",
-												"comparison": 4,
-												"value": "1"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "textPlayerRemove",
-											"sid": 872277851971984,
-											"parameters": {
-												"visibility": "visible"
-											}
-										},
-										{
-											"id": "start-fade",
-											"objectClass": "textPlayerRemove",
-											"sid": 486686746748349,
-											"behaviorType": "Fade"
-										}
-									],
-									"sid": 649579242801551
-								}
-							]
+							"sid": 181364358549370
 						}
 					]
 				},
@@ -405,7 +405,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Player inputs"
+					"text": "Player movement"
 				},
 				{
 					"eventType": "block",
@@ -656,67 +656,6 @@
 							]
 						}
 					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 593977460101275,
-							"parameters": {
-								"key": 27
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "close",
-							"objectClass": "Browser",
-							"sid": 121777428110521
-						}
-					],
-					"sid": 919088043445885
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 868746778586286,
-							"parameters": {
-								"key": 67
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "panel",
-							"sid": 658859858189577,
-							"parameters": {
-								"visibility": "toggle"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "textInCredit1",
-							"sid": 303947973558527,
-							"parameters": {
-								"visibility": "toggle"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "textInCredit2",
-							"sid": 428258235892568,
-							"parameters": {
-								"visibility": "toggle"
-							}
-						}
-					],
-					"sid": 168754034278905
 				}
 			],
 			"sid": 165129915097616
@@ -728,6 +667,10 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "comment",
+					"text": "For coffee table"
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -772,6 +715,10 @@
 						}
 					],
 					"sid": 747508817261740
+				},
+				{
+					"eventType": "comment",
+					"text": "For dinner table"
 				},
 				{
 					"eventType": "block",
@@ -884,6 +831,51 @@
 						}
 					],
 					"sid": 751288955411385
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "objPlayer",
+							"sid": 565492887617421,
+							"parameters": {
+								"object": "objSofa"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "objSofa",
+							"sid": 506846232120685,
+							"parameters": {
+								"opacity": "50"
+							}
+						}
+					],
+					"sid": 124215974810432
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 469511968144211
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "objSofa",
+							"sid": 176903521685519,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 509460894302934
 				}
 			],
 			"sid": 513624583689467
@@ -1181,9 +1173,9 @@
 										{
 											"id": "set-text",
 											"objectClass": "textScore",
-											"sid": 474937841281784,
+											"sid": 217047589122863,
 											"parameters": {
-												"text": "\"P\"&objPlayer.IID+1&\": \"&objPlayer.score"
+												"text": "objPlayer.score"
 											}
 										}
 									],
@@ -2193,10 +2185,6 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "comment",
-					"text": "Customizes buttons"
-				},
-				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -2205,14 +2193,135 @@
 							"sid": 149121537074789
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Set UI items invisible"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textPlayerRemove",
+							"sid": 563875748334282,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "panel",
+							"sid": 792306576995065,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit1",
+							"sid": 126677035475450,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit2",
+							"sid": 668693728219956,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
 					"sid": 770092447271248,
 					"children": [
 						{
+							"eventType": "comment",
+							"text": "Customizes buttons"
+						},
+						{
 							"eventType": "script",
 							"script": "var myButtons = document.getElementsByClassName(\"myButton\");\n\nfor (let i=0; i<myButtons.length; i++) {\n\tmyButtons[i].style[\"border\"] = \"2px solid black\";\n\tmyButtons[i].style[\"background-color\"] = \"#ffffff50\";\n\tmyButtons[i].style[\"border-radius\"] = \"15px\";\n\tmyButtons[i].style[\"font-size\"] = \"20px\";\n\tmyButtons[i].style[\"filter\"] = \"drop-shadow(0px 5px 3px #00000030)\";\n};"
+						},
+						{
+							"eventType": "comment",
+							"text": "Set remove player notice visible"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 157808944594107,
+									"parameters": {
+										"variable": "playerCount",
+										"comparison": 4,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "textPlayerRemove",
+									"sid": 872277851971984,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "textPlayerRemove",
+									"sid": 486686746748349,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 195739243717903
 						}
 					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Set credits visible"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 868746778586286,
+							"parameters": {
+								"key": 67
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "panel",
+							"sid": 658859858189577,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit1",
+							"sid": 303947973558527,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "textInCredit2",
+							"sid": 428258235892568,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 168754034278905
 				}
 			],
 			"sid": 855555964517347

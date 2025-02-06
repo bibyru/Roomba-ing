@@ -112,8 +112,7 @@
 			"TESTtext",
 			"Browser",
 			"Audio",
-			"Sprite",
-			"textPlayerID"
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -165,7 +164,8 @@
 					"textCredit",
 					"panel",
 					"textInCredit1",
-					"textInCredit2"
+					"textInCredit2",
+					"textPlayerID"
 				],
 				"subfolders": [],
 				"name": "UI"
