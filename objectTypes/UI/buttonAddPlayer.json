@@ -1,0 +1,9 @@
+{
+	"name": "buttonAddPlayer",
+	"plugin-id": "Button",
+	"sid": 761832929737144,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

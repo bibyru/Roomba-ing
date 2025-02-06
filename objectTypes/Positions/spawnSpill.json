@@ -1,0 +1,68 @@
+{
+	"name": "spawnSpill",
+	"plugin-id": "Sprite",
+	"sid": 479307743836618,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "SpawnTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 103952408140128
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9924256,
+						"collisionPoly": {
+							"points": [
+								0.4375,
+								0.3125,
+								0.5625,
+								0.3125,
+								0.6875,
+								0.4375,
+								0.6875,
+								0.5625,
+								0.5625,
+								0.6875,
+								0.4375,
+								0.6875,
+								0.3125,
+								0.5625,
+								0.3125,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 345074312222559,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"name": "perkBoost",
+	"plugin-id": "Sprite",
+	"sid": 952799229478647,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 607878270641303
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8052500,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0,
+								0.875,
+								0,
+								1,
+								0.125,
+								1,
+								0.875,
+								0.875,
+								1,
+								0.125,
+								1,
+								0,
+								0.875,
+								0,
+								0.125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 164363662681848,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

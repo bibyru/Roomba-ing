@@ -1,0 +1,15 @@
+{
+	"name": "textCredit",
+	"plugin-id": "Text",
+	"sid": 292447093077972,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "alpharamp",
+			"name": "AlphaRamp"
+		}
+	]
+}

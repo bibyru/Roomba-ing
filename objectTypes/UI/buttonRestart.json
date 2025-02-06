@@ -1,0 +1,9 @@
+{
+	"name": "buttonRestart",
+	"plugin-id": "Button",
+	"sid": 317042270191825,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

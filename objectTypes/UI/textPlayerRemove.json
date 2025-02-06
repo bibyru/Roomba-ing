@@ -1,0 +1,16 @@
+{
+	"name": "textPlayerRemove",
+	"plugin-id": "Text",
+	"sid": 411115003205938,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 931036354846767
+		}
+	],
+	"effectTypes": []
+}

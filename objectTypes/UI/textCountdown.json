@@ -1,0 +1,32 @@
+{
+	"name": "textCountdown",
+	"plugin-id": "Text",
+	"sid": 255159619777396,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "timeLeft",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 222343271241391
+		},
+		{
+			"name": "minute",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 919668305046449
+		},
+		{
+			"name": "second",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 481495582843107
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

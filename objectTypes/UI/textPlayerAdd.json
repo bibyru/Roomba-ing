@@ -1,0 +1,16 @@
+{
+	"name": "textPlayerAdd",
+	"plugin-id": "Text",
+	"sid": 378351286356648,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 263430436388350
+		}
+	],
+	"effectTypes": []
+}
